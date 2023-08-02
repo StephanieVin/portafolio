@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio terminal</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> bash - Estefanía León Portfolio</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Ingreso Exitoso - <span class="error" id="date"></span></div>
+          <div class="title">Mi Portfolio</div>
+          Hola! Bienvenidos a mi portafolio, para ver la lista de commandos ingresa <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">$</span> <span class="title">gestuser</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Puedes ingresar cualquiera de estos comandos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre mi</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Listado de mis redes sociales</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Las herramientas con las que trabajo</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Todo sobre mi formación</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Donde trabajé hasta ahora</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Un listado de mis proyectos</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Borrar el historial de la terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Proyectos: </div>
+      <div class="indent">
+        <span class="title">Proyecto 1 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 2 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 3 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Programacion</span>:
+          <div class="indent">
+            <span class="title">PHP,</span>
+            <span class="title">javascript,</span>
+            <span class="title">CSS,</span>
+            <span class="title">HTML,</span>
+            <span class="title">Git (Control de versiones).</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Herramienta de Diseño</span>:
+          <div class="indent">
+            <span class="title">Illustrator</span>
+            <span class="title">Photoshop</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español (Nativo)</span>
+            <span class="title">Inglés (Intermedio)</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi: </div>
+        <div class="indent">
+          Hola! mi nombre es <span class="command">nombre apellido</span>
+          Soy desarrolladora web, me dedico a realizar sistemas de la información desde cero, e implementar módulos a sistemas
+          utilizando los requerimietos solicitados por clientes, además de colaboración con código opensource, utilizando PHP como lenguaje principal,
+          frameworks como CodeIgniter 4 y Laravel, además del uso de tecnologías como livewire.
+           
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">Experiencia: </div>
+      <div class="indent">
+        <span class="title">FullStack DEV - Ingenia Oaxaca</span> - <span class="command">Mayo 2019 - Enero 2020</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">FullStack DEV - Instituto de Investigaciones Estéticas (IEE)</span> - <span class="command">Enero 2021 - 2022</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <span class="command">https://github.com/user</span>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <span class="command">https://linkedin.com/user</span>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Ingeniería en Informática - Universidad</span> <span class="command">Finalizado 2022</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Curso de Git</span> <span class="command">2021</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+    </div>
+</body>
+</html>
